@@ -3,9 +3,7 @@
 class Player:
     def __init__(self, name, current_room , stash=[]):
         self.name= name
-
         self.current_room = current_room
-
         self.stash = stash
     def __str__(self):
         

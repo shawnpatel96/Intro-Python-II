@@ -6,7 +6,7 @@ class Duck:
         self.leash = leash
     def about(self):
         print(
-            f"This duck has a {self.bill.description} bill, a pretty {self.leash.color} leash, and a {self.tail.length} tail.")
+            f"\nThis duck has a {self.bill.description} bill, a pretty {self.leash.color} leash, and a {self.tail.length} tail.\n")
 class Bill:
     def __init__(self, description):
         self.description = description
