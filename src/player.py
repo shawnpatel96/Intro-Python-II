@@ -6,4 +6,4 @@ class Player:
         self.current_room = current_room
         self.stash = stash
     def __str__(self):
-        return(f"{self.name} is in {self.current.room}.")
+        return(f"{self.name} {self.current.room}")

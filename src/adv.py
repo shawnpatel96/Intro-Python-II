@@ -50,7 +50,9 @@ room['treasure'].s_to = room['narrow']
 # Print an error message if the movement isn't allowed.
 #
 # If the user enters "q", quit the game.
+
 new_player = Player("Bob",room['outside'])   # <-- new player here
+
 command = ""
 
 print("\nMovement Keys: 'w', 's', 'a', 'd'\n>> Press 'q' to quit\n")
@@ -80,5 +82,4 @@ while command != ["q"]:
             print(f"\nYou enter the {new_player.current_room}")
     
     if command == "q":
-        print("Farewell, adventurer.")
         exit()
