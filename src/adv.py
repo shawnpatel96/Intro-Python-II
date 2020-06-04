@@ -52,7 +52,7 @@ room['treasure'].s_to = room['narrow']
 #
 # If the user enters "q", quit the game.
 
-new_player = Player("Bob",room['outside'])   # <-- new player here
+new_player = Player("Dragon of the West",room['outside'])   # <-- new player here
 
 command = ""
 
@@ -60,27 +60,26 @@ print("\nMovement Keys: 'w', 's', 'a', 'd'\n>> Press 'q' to quit\n")
 
 print(f"Hello {new_player.name}, your current position is: {new_player.current_room}")
 
-while command != ["q"]:
+while command !="q":
     command = str(input("\nType a command: "))
 
     if command == "w":
             new_player.current_room = new_player.current_room.n_to
-            print(f"\nYou enter the {new_player.current_room}")
+            print(f"\nYou have entered the {new_player.current_room}")
         
-
     if command == "s":
             new_player.current_room = new_player.current_room.s_to
-            print(f"\nYou enter the {new_player.current_room}")
+            print(f"\nYou have entered the {new_player.current_room}")
   
-
     if command == "d":
             new_player.current_room = new_player.current_room.w_to
-            print(f"\nYou enter the {new_player.current_room}")
+            print(f"\nYou have entered the {new_player.current_room}")
       
-
     if command == "a":
             new_player.current_room = new_player.current_room.e_to
-            print(f"\nYou enter the {new_player.current_room}")
+            print(f"\nYou have entered the {new_player.current_room}")
     
     if command == "q":
         exit()
+
+        
