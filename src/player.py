@@ -5,6 +5,7 @@ class Player:
         self.name= name
         self.current_room = current_room
         self.inventory = inventory 
+        
     def __str__(self):
         return(f"{self.name}: {self.current_room}")
     

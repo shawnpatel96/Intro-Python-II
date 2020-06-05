@@ -63,7 +63,7 @@ room['treasure'].s_to = room['narrow']
 new_player = Player("PMC",room['outside'])   # <-- new player here
 
 command = ""
-
+current_terminal_room= new_player.current_room
 print("\nMovement Keys: 'w', 's', 'a', 'd'\n>> Press 'q' to quit\n")
 
 print(f"Hello {new_player.name}, your current position is: {new_player.current_room}")
@@ -102,6 +102,10 @@ while command !="q":
 
     if command == 'check inventory':
             new_player.check_inventory()   
+
+    if command == 'Add Room Item':
+            room_add = input('What item would you like to add to this room? Item:')
+            current_terminal_room.add_item(room_add)
 
 
     if command == "q":
